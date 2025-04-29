@@ -126,37 +126,38 @@
 						
 									<div class="empty_space_12"><span class="empty_space_inner"></span></div>
 									<form id="contactForm">
-										<div class="row">
-										<div class="col-md-6">
-											<input type="text" name="first_name" class="wpcf7-form-control" required placeholder="First Name">
+										<div class="row" style="margin-bottom: 15px;">
+											<div class="col-md-6" style="margin-bottom: 15px;">
+												<input type="text" name="first_name" class="wpcf7-form-control" required placeholder="First Name" style="width: 100%; padding: 10px;">
+											</div>
+											<div class="col-md-6" style="margin-bottom: 15px;">
+												<input type="text" name="last_name" class="wpcf7-form-control" required placeholder="Last Name" style="width: 100%; padding: 10px;">
+											</div>
 										</div>
-										<div class="col-md-6">
-											<input type="text" name="last_name" class="wpcf7-form-control" required placeholder="Last Name">
+										<div class="row" style="margin-bottom: 15px;">
+											<div class="col-md-6" style="margin-bottom: 15px;">
+												<input type="text" name="phone" class="wpcf7-form-control" placeholder="Phone Number" style="width: 100%; padding: 10px;">
+											</div>
+											<div class="col-md-6" style="margin-bottom: 15px;">
+												<input type="email" name="email" class="wpcf7-form-control" required placeholder="Email Address" style="width: 100%; padding: 10px;">
+											</div>
 										</div>
+										<div class="row" style="margin-bottom: 15px;">
+											<div class="col-md-6" style="margin-bottom: 15px;">
+												<input type="text" name="company" class="wpcf7-form-control" placeholder="Your Company" style="width: 100%; padding: 10px;">
+											</div>
+											<div class="col-md-6" style="margin-bottom: 15px;">
+												<input type="text" name="subject" class="wpcf7-form-control" placeholder="Subject" style="width: 100%; padding: 10px;">
+											</div>
 										</div>
-										<div class="row">
-										<div class="col-md-6">
-											<input type="text" name="phone" class="wpcf7-form-control" placeholder="Phone Number">
+										<div class="contact-mess" style="margin-bottom: 15px;">
+											<textarea name="message" class="wpcf7-form-control" required placeholder="Messenger" style="width: 100%; padding: 10px;"></textarea>
 										</div>
-										<div class="col-md-6">
-											<input type="email" name="email" class="wpcf7-form-control" required placeholder="Email Address">
-										</div>
-										</div>
-										<div class="row">
-										<div class="col-md-6">
-											<input type="text" name="company" class="wpcf7-form-control" placeholder="Your Company">
-										</div>
-										<div class="col-md-6">
-											<input type="text" name="subject" class="wpcf7-form-control" placeholder="Subject">
-										</div>
-										</div>
-										<div class="contact-mess">
-										<textarea name="message" class="wpcf7-form-control" required placeholder="Messenger"></textarea>
-										</div>
-										<p>
-										<input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit btn">
+										<p style="margin-top: 20px;">
+											<input type="submit" value="SUBMIT" class="wpcf7-form-control wpcf7-submit btn" style="padding: 10px 20px;">
 										</p>
 									</form>
+									
 									<div class="empty_space_30 lg-hidden"><span class="empty_space_inner"></span></div>
 									</div>
 								</div>
@@ -200,7 +201,7 @@
 								'Message': $('[name="message"]').val()
 							};
 						
-							// Replace this with your actual Privyr form link
+							// ⚠️ Replace this with your actual Privyr form link
 							const endpoint = '';
 						
 							$.ajax({
